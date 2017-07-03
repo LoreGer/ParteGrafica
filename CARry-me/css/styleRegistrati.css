@@ -1,0 +1,231 @@
+.navbar-default{
+
+    padding: 2px;
+    margin:0 auto;
+
+
+}
+
+.navbar {
+    background:  white;
+    opacity: 0.93;
+    float:right;
+    margin:0 auto;
+
+}
+.navbar-brand{
+    width: 120px;
+    height: 120px;
+    border: 4px solid lightblue;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+
+}
+.img-circle{
+
+    width: 181px;
+    height: 114px;
+    overflow: hidden;
+    margin-top: -16px;
+    margin-left: -47px;
+}
+
+.btn-lg{
+
+    border-color: white;
+    border-radius: 75px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+.linkhome{
+
+    color: white;
+    margin-top: 80px;
+    border-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    opacity: 2;
+}
+
+.linkhome2{
+
+    text-decoration: white;
+    margin-top: 80px;
+    border-color: inherit;
+    margin-left: 15px;
+    border-radius: 10px;
+    opacity: 1;
+
+
+
+}
+.body{
+    margin-top: 80px;
+}
+
+/*animazioni*/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    animation-duration: 3s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+    animation-duration: .75s;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;}
+
+
+
+@keyframes bounceOut {
+    20% {
+        transform: scale3d(.9, .9, .9);
+    }
+
+    50%, 55% {
+        opacity: 1;
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.bounceOut {
+    animation-name: bounceOut;
+}
+
+
+
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+/*scritta Non sei ancora un utente? Iscriviti gratis */
+.h3 {
+    font-family: Calibri,cursive;
+    font-style: italic;
+    margin-top: 160px;
+    text-align: center;
+    color: blue;
+
+
+}
+
+/*area dove ci sono i campi
+.col-md-6{
+
+   /* background-color: darkblue;
+    color: white;
+
+
+
+    border-color: darkblue;
+    border-style: solid;
+    border-width: 1px;
+
+
+}*/
+
+ /*campi nome,cognome, email,username,passw*/
+.form-horizontal{
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+
+/*campo sesso (solo scritta=Sesso)*/
+.sex{
+    margin-top: 30px;
+    margin-left: 85px;
+}
+
+ /*M e F*/
+
+.radio-inline{
+    margin-left: 40px;
+}
+
+/*bottone iscriviti*/
+
+
+.btn-primary{
+    margin-top: 10px;
+    margin-left: 180px;
+
+    
+}
+
+
+/* scritta i seguenti campi sono obbligatori*/
+#campiobbligatori{
+margin-left: 120px ;
+    font-size: 80%;
+
+}
+
+
+

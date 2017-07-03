@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-image="http://www.w3.org/1999/xhtml">>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="GDI Philly Intro to jQuery class demo files">
+    <title>CARry-me_Prenota</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylePrenota.css">
+    <meta name="viewport" content="width-device-width, initial-scale-1"/>
+
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="js/index_prenota.js"></script>
+</head>
+
+
+<body>
+
+<!-- Pagina una volta cliccato sul tasto Prenota-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Collassa per mobile display, definisce il bottone e il menù verticale -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Oggetti che vengono collassati -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Immagine di Carry-me -->
+            <a  class="navbar-brand animated fadeInLeft" href="#">
+                <img alt="Brand" src="img/Logo3.png" class="img-circle">
+            </a>
+            <!-- Link per Home, Profilo e Info (anche loro vvengono collassati su mobile) -->
+            <ul class="nav navbar-nav">
+
+                <button class="btn  btn-danger linkhome animated fadeInUp " type="submit">
+                    Home
+                    <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span>
+                </button>
+                <button class="btn  btn-success linkhome2 animated fadeInUp" type="submit">
+                    Profilo
+                    <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+                <button class="btn  btn-warning linkhome2 animated fadeInUp" type="submit">
+                    Info
+                    <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                </button>
+
+
+            </ul>
+
+            <!--Bottoni per Lon In e Registrazione (vengono collassati per mobile) -->
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+
+                <button class="btn btn-lg btn-primary animated fadeInRight" id="logout" type="submit">
+                    Log out
+                    <span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span>
+                </button>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!--PER RICERCA PASSAGGIO-->
+
+<form class="form-inline">
+        <div class="form-group">
+            <span class="badge"><img src="https://d1ovtcjitiy70m.cloudfront.net/vi-1/images/homepage/2016/icon-circle.svg" alt="" aria-hidden="true" >
+
+            <input type="text" class="form-control" id="partenza" placeholder="Luogo di partenza">
+            </span>
+        </div>
+        <div class="form-group">
+
+            <span class="badge"><img src="https://d1ovtcjitiy70m.cloudfront.net/vi-1/images/homepage/2016/icon-circle.svg" alt="" aria-hidden="true" >
+
+            <input type="text" class="form-control" id="arrivo" placeholder="Luogo di arrivo">
+            </span>
+        </div>
+
+    <div class="form-group">
+
+        <span class="badge"><img src="https://d1ovtcjitiy70m.cloudfront.net/vi-1/images/homepage/2016/icon-calendar.svg" alt="" aria-hidden="true">
+
+        <input type="text" class="form-control" id="data" placeholder="Data (01/01/1999)">
+        </span>
+
+    </div>
+
+        <button type="submit" class="btn btn-default">GO!</button>
+
+</form>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <form class="form-horizontal">
+
+                <strong>FILTRI</strong>
+                <div class="form-group">
+                    <label for="ora" class="col-sm-2 control-label">Ora</label>
+                    <div class="col-sm-7">
+                        <input type="email" class="form-control" id="ora" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prezzo" class="col-sm-2 control-label">Prezzo</label>
+                    <div class="col-sm-7">
+                        <input type="email" class="form-control" id="prezzo" >
+                    </div>
+                </div>
+            </form>
+            <button type="submit" class="btn btn-default">FILTRA</button>
+        </div>
+
+        <div class="col-md-9">
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

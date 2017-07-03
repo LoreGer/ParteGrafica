@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="GDI Philly Intro to jQuery class demo files">
+    <title>CARry-me_Registrati</title>
+
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="css/styleRegistrati.css">
+    <link rel="stylesheet" href="css/styleHome.css">
+
+</head>
+
+
+<body>
+
+<!-- Pagina una volta cliccato sul tasto Prenota-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Collassa per mobile display, definisce il bottone e il menù verticale -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Oggetti che vengono collassati -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Immagine di Carry-me -->
+            <a  class="navbar-brand animated fadeInLeft" href="#">
+                <img alt="Brand" src="img/Cattura.PNG" class="img-circle">
+            </a>
+            <!-- Link per Home, Profilo e Info (anche loro vvengono collassati su mobile) -->
+            <ul class="nav navbar-nav">
+
+                <button class="btn  btn-danger linkhome animated fadeInUp " type="submit">
+                    Home
+                    <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span>
+                </button>
+                <button class="btn  btn-success linkhome2 animated fadeInUp" type="submit">
+                    Profilo
+                    <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+                <button class="btn  btn-warning linkhome2 animated fadeInUp" type="submit">
+                    Info
+                    <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                </button>
+
+            </ul>
+
+            <!--Bottoni per Lon In e Registrazione (vengono collassati per mobile) -->
+            </form>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--HEADER-->
+
+
+<div class="h3"><strong>Non sei ancora un utente? Iscriviti gratis</strong> </div>
+
+<!-- ho scaricato bootstrap-social.css per inserire simbolo fb su pagina ma non funziona
+
+    <h3>
+        <span>in 2 secondi</span> con Facebook
+    </h3>
+<button type="button" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
+
+<a class="btn btn-fb">
+    <i class="fa fa-facebook left"></i>
+    <span>Facebook</span>
+</a>
+
+-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+
+        <div class="col-md-6">
+
+            <!-- Sesso-->
+            <div class="sex">
+                <strong>Sesso*</strong>
+            <label class="radio-inline">
+                <input type="radio" name="maschiofemmina" id="sessoM" value="M" checked="checked"> M <!--name serve per NON far selezionare entrambi i checkbox-->
+            </label>                                                                                 <!-- checked serve in quanto appena appare il form uno per default è selezionato-->
+            <label class="radio-inline">
+                <input type="radio" name="maschiofemmina" id="sessoF" value="F"> F
+            </label>
+        </div>
+
+<!--Nome,Cognome,Email,Username,Password,Riconferma password -->
+            <form class="form-horizontal" >
+
+<!--NOME-->
+                <div class="form-group">
+                    <label for="nome" class="col-sm-2 control-label">Nome*</label>
+                    <div class="col-sm-7">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" id="nome" name="nome" >
+                        </div>
+                        <span class="error" id="name_error_message"></span>
+                    </div>
+                </div>
+<!--COGNOME-->
+                    <div class="form-group">
+                    <label for="cognome" class="col-sm-2 control-label">Cognome*</label>
+                    <div class="col-sm-7">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" id="cognome" cognome="cognome" placeholder="">
+                        </div>
+                        <span class="error" id="cognome_error_message"></span>
+                    </div>
+                    </div>
+<!--DATA DI NASCITA-->
+                    <div class="form-group">
+                        <label for="bday" class="col-sm-2 control-label">Data di nascita*</label>
+                        <div class="col-sm-7">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input type="date" class="form-control" id="bday" name="bday">
+                    </div>
+                            <span class="error" id="data_error_message"></span>
+                        </div>
+                    </div>
+
+<!--EMAIL-->
+                        <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email*</label>
+                    <div class="col-sm-7">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" >
+                    </div>
+                        <span class="error" id="email_error_message"></span>
+                    </div>
+                        </div>
+
+<!--CELLULARE-->
+                            <div class="form-group">
+                                <label for="cell" class="col-sm-2 control-label">Cellulare*</label>
+                                <div class="col-sm-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                        <input type="email" class="form-control" id="cell" >
+                                    </div>
+                                    <span class="error" id="cellulare_error_message"></span>
+                                </div>
+                            </div>
+<!--USERNAME-->
+                <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">Username*</label>
+                    <div class="col-sm-7">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user" ></i></span>
+                            <input type="text" class="form-control" id="username" title="Deve essere compreso tra 5 e 20 caratteri">
+
+                        </div>
+                        <span class="error" id="username_error_message"></span>
+                    </div>
+                </div>
+<!--PASSWORD-->
+                <div class="form-group">
+                    <label for="passw" class="col-sm-2 control-label">Password*</label>
+                    <div class="col-sm-7">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" id="passw" required pattern=((?=.*[0-9])(?=.*[a-zA-Z]).{8,}) title="Sono richiesti 8 caratteri con almeno un carattere maiuscolo e un numero"  >
+                    </div>
+                        <span class="error" id="password_error_message"></span>
+                    </div>
+                </div>
+
+<!-- RICONFERMA PASSWORD-->
+                <div class="form-group">
+                    <label for="confpassw" class="col-sm-2 control-label">Riconferma Password*</label>
+                    <div class="col-sm-7">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" id="confpassw" required pattern=((?=.*[0-9])(?=.*[a-zA-Z]).{8,}) title="Sono richiesti 8 caratteri con almeno un carattere maiuscolo e un numero">
+                    </div>
+                        <span class="error" id="ripassword_error_message"></span>
+                    </div>
+                </div>
+
+
+                <div id="campiobbligatori">*I seguenti campi sono obbligatori</div>
+<!--BOTTONE ISCRIVITI-->
+                        <button type="button" class="btn btn-primary">Iscriviti</button>
+
+
+
+</form>
+
+        </div>
+
+
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/index_registrati.js"></script>
+
+<!--<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.min.js"></script>
+
+-->
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-image="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="GDI Philly Intro to jQuery class demo files">
+    <title>CARry-me</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleHome.css">
+
+
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<!-- PAGINA INIZIALE -->
+
+<!--       NAVBAR SUPERIORE               -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Collassa per mobile display, definisce il bottone e il menù verticale -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Oggetti che vengono collassati -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Immagine di Carry-me -->
+            <a  class="navbar-brand animated fadeInLeft" href="#">
+                <img alt="Brand" src="img/Cattura.PNG" class="img-circle">
+            </a>
+            <!-- Link per Home, Profilo e Info (anche loro vvengono collassati su mobile) -->
+            <ul class="nav navbar-nav">
+
+                <button class="btn  btn-danger linkhome animated fadeInUp " type="submit">
+                    Home
+                    <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span>
+                </button>
+                <button class="btn  btn-success linkhome2 animated fadeInUp" type="submit">
+                    Profilo
+                    <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+                <button class="btn  btn-warning linkhome2 animated fadeInUp" type="submit">
+                    Info
+                    <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                </button>
+
+            </ul>
+
+            <!--Bottoni per Lon In e Registrazione (vengono collassati per mobile) -->
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <button class="btn btn-lg btn-primary animated fadeInRight" id="registrati"type="submit" >
+                    Registrati
+                    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+
+                </button>
+
+                <button class="btn btn-lg btn-primary animated fadeInRight"  type="button" data-toggle="modal" data-target="#in" data-whatever="">
+                    Log In
+                    <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+
+                <!--messo con display:none nel momento in cui accede si sostituisce Registrati e Logiin con questo bottone-->
+                <button class="btn btn-lg btn-primary animated fadeInLeft " id="logout" type="button" >
+                    Log out
+                    <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+
+                <div class="benvenuto animated fadeInRight">Benvenuto &nbsp </div> <!-- &nbsp serve per aggiungere uno spazio-->
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+<!--CAROSELLO -->
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-image: url(img/carosello.PNG)">
+
+            <div class="carousel-caption animated fadeInUp">
+                <h3 class="testocarosello">CARry-me: Viaggia con il sorriso</h3>
+
+            </div>
+        </div>
+        <div class="item " style="background-image: url(img/summer.jpg);">
+
+            <div class="carousel-caption animated fadeInUp">
+                <h3 class="testocarosello">Prenota il tuo passaggio!</h3>   <!-- da rivedere se vogliamo non fare apparire i bottoni e farli apparire -->
+                <p class="paragrafo">E' facilissimo: clicca su Prenota!</p>   <!--una volta fatto il login se è così vanno cambiate le scritta -->
+            </div>
+        </div>
+        <div class="item " style="background-image: url(img/5.jpg);">
+
+            <div class="carousel-caption animated fadeInUp">
+                <h3 class="testocarosello">Lascia il tuo feedback!</h3>
+                <p class="paragrafo">aiuta così gli altri utenti a scegliere il meglio!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+  </div>
+ <!--FINE DEL CAROSELLO -->
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3"></div>
+
+      <div class="col-md-3">
+
+              <button class="btn btn-lg btn-primary btn-block animated fadeInLeft" type="submit">
+
+                  OFFRI
+
+                  <span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              </button>
+      </div>
+              <div class="col-md-3">
+              <button class="btn btn-lg btn-primary btn-block animated fadeInRight" id="prenota" type="submit" >
+              PRENOTA
+              <span class="glyphicon glyphicon glyphicon-hand-up" aria-hidden="true"></span>
+          </button>
+
+              </div>
+
+
+
+  </div>
+
+      <div class="col-md-3"></div>
+
+  </div>
+
+</div>
+
+
+
+<!-- MODAL-->
+<!--clicco sul pulsante Login e mi appare questo Modal-->
+
+<div class="modal fade" id="in" tabindex="-1" role="dialog" aria-labelledby="effettualogin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="effettualogin">Effettua il login</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">Username</label>
+                        <input type="text" class="form-control " id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">Password</label>
+                        <input type="password" class="form-control" id="password"></input>
+                    </div>
+                </form>
+
+                <div class="checkbox">
+                <label >
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Accedi</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+-->
+<script src="js/index.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

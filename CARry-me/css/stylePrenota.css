@@ -1,0 +1,198 @@
+.navbar-default{
+
+    padding: 2px;
+    margin:0 auto;
+
+
+}
+
+.navbar {
+    background:  white;
+    opacity: 0.93;
+    float:right;
+    margin:0 auto;
+
+}
+.navbar-brand{
+    width: 120px;
+    height: 120px;
+    border: 4px solid lightblue;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+
+}
+.img-circle{
+
+    width: 181px;
+    height: 114px;
+    overflow: hidden;
+    margin-top: -16px;
+    margin-left: -47px;
+}
+
+.btn-lg{
+
+    border-color: white;
+    border-radius: 75px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+.linkhome{
+
+    color: white;
+    margin-top: 80px;
+    border-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    opacity: 2;
+}
+
+.linkhome2{
+
+    text-decoration: white;
+    margin-top: 80px;
+    border-color: inherit;
+    margin-left: 15px;
+    border-radius: 10px;
+    opacity: 1;
+
+
+
+}
+
+
+/*animazioni*/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    animation-duration: 3s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+    animation-duration: .75s;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;}
+
+
+
+@keyframes bounceOut {
+    20% {
+        transform: scale3d(.9, .9, .9);
+    }
+
+    50%, 55% {
+        opacity: 1;
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.bounceOut {
+    animation-name: bounceOut;
+}
+
+
+
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+
+.form-inline{
+
+    margin-top: 140px;
+    position: relative;
+    text-align: center;
+
+
+}
+
+/*pagina prenota passaggio ove inserire la partenza,arrivo e data */
+#partenza {
+    width: 350px;
+    height: 50px;
+}
+
+#arrivo {
+    width: 350px;
+    height: 50px;
+}
+#data{
+    width: 350px;
+    height: 50px;
+}
+
+.btn-default{
+    height: 80px;
+    background-color: grey;
+    color:white;
+    width: 80px;
+
+}
+
+
